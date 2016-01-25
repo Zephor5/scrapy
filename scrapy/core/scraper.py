@@ -11,7 +11,7 @@ from scrapy.utils.defer import defer_result, defer_succeed, parallel, iter_errba
 from scrapy.utils.spider import iterate_spider_output
 from scrapy.utils.misc import load_object
 from scrapy.utils.log import logformatter_adapter, failure_to_exc_info
-from scrapy.exceptions import CloseSpider, DropItem, IgnoreRequest
+from scrapy.exceptions import CloseSpider, DropItem, IgnoreRequest, IgnoreResponse
 from scrapy import signals
 from scrapy.http import Request, Response
 from scrapy.item import BaseItem
