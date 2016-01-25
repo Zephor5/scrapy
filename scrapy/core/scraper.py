@@ -200,7 +200,7 @@ class Scraper(object):
         errors that got propagated thru here)
         """
         if (isinstance(download_failure, Failure) and
-                not download_failure.check(IgnoreRequest)):
+                not download_failure.check(IgnoreRequest, IgnoreResponse)):
             if download_failure.frames:
                 logger.error('Error downloading %(request)s',
                              {'request': request},
