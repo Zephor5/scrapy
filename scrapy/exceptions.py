@@ -16,6 +16,9 @@ class NotConfigured(Exception):
 class IgnoreRequest(Exception):
     """Indicates a decision was made not to process a request"""
 
+class IgnoreResponse(Exception):
+    """Indicates a decision was made not to process a response"""
+
 class DontCloseSpider(Exception):
     """Request the spider not to be closed yet"""
     pass
